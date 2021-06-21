@@ -1,0 +1,85 @@
+{
+  "signup": [
+    {
+      "email": "thulasi@gmail.com",
+      "password": "12345678"
+    }
+  ],
+  "books": [
+    {
+      "bookId": 1,
+      "bookName": "Advices",
+      "bookDescription": "Advices of life",
+      "bookAuthor": "Thulasi"
+    },
+    {
+      "bookId": 2,
+      "bookName": "suggestions",
+      "bookDescription": "suggestions of life",
+      "bookAuthor": "manoj"
+    }
+  ],
+  "user": [
+    {
+      "userId": 1,
+      "userName": "Thanuja",
+      "email": "thanuja@gmai.com",
+      "bookName": "Advices"
+    },
+    {
+      "userId": 2,
+      "userName": "Sonu",
+      "email": "sonu@gmai.com",
+      "bookName": "Suggestions"
+    },
+    {
+      "userId": 3,
+      "userName": "Sonusoud",
+      "email": "sonu@gmai.com",
+      "bookName": "Suggestions",
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "userName": "Sonusoudi",
+      "email": "sonu@gmai.com",
+      "bookName": "Suggestions",
+      "id": 2
+    },
+    {
+      "userId": "5",
+      "userName": "Sonus",
+      "email": "sonu@gmai.com",
+      "bookName": "Suggestions",
+      "id": 3
+    },
+    {
+      "userId": "6",
+      "userName": "Elisa",
+      "email": "Elisa@gmail.com",
+      "bookName": "Elisalife",
+      "id": "4"
+    },
+    {
+      "userId": "7",
+      "userName": "john",
+      "email": "john@gmail.con",
+      "bookName": "jhonstory",
+      "id": "5"
+    },
+    {
+      "userId": "8",
+      "userName": "mounika",
+      "email": "mounika@gmail.com",
+      "bookName": "mounikalifestory",
+      "id": "MV6okl6"
+    },
+    {
+      "userId": "9",
+      "userName": "johnElisa",
+      "email": "johnE@gmail.com",
+      "bookName": "Elisastory",
+      "id": "7"
+    }
+  ]
+}

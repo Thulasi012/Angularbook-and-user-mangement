@@ -1,0 +1,39 @@
+<h1>BOOk-Details</h1>
+<!--<app-reusablebutton  [label]="label" (input)="searchedBook(bookName.value)" #bookName placeholder="Search.." name="search"></app-reusablebutton>-->
+  <!--<div>
+    <input type="text" (input)="searchedBook(bookName.value)" #bookName class="form-control" placeholder="Search.." name="search">
+  </div>-->
+  <app-reusablebutton [bookName]="bookName"  #bookName (messageToEmit)="searchedBook($event)"></app-reusablebutton>
+  <div>
+  <table  *ngIf="book && book.length">
+    
+      <tr>
+        <th>BookId</th>
+        <th>BookName</th>
+        <th>BookDescription</th>
+        
+        <th>BookAuthor</th>
+       
+      </tr>
+ 
+    
+      
+      <tr *ngFor="let b of book">
+        
+        <td>{{b.bookId}}</td>
+        <td>{{b.bookName}}</td>
+        <td>{{b.bookDescription}}</td>
+        <td>{{b.bookAuthor}}</td>
+        
+      
+      </tr>
+      
+      
+    
+  </table>
+</div>
+  <div *ngIf ="show">
+    <h4>no book Available</h4>
+          </div>
+       
+

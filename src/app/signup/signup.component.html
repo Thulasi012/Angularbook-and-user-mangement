@@ -1,0 +1,34 @@
+<div>
+    <form [formGroup]="register" (ngSubmit)="submit(register)" ><!--(ngSubmit)="submit(loginform)"  #emailRef="ngModel"  #passwordRef="ngModel"  #loginform="ngform"-->
+        <div><h2>signup</h2></div>
+        <div class="form-group">
+            <label>User Name</label>
+        </div>
+        <div>
+            <input  name="username" class="form-control"   formControlName="userName"  required >
+        </div>
+        
+        <div class="form-group">
+            <label>Email Id</label>
+        </div>
+        <div>
+            <input type="email" name="email" class="form-control"  formControlName="email" required email>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+        </div>
+        <div>
+            <input type="password" name="password"  class="form-control"  formControlName="password"  required >
+        </div>
+        
+        <div class="form-group">
+           <button type="submit"  class ='btn'>signup</button>
+        </div>
+    </form>
+    <div>
+        {{msg}}
+    </div>
+</div>
+<!--[disabled]="!loginform.form.valid"-->
+

@@ -1,0 +1,22 @@
+<div>
+    <form  #loginform="ngForm" (ngSubmit)="submit(loginform)"><!--(ngSubmit)="submit(loginform)"  #emailRef="ngModel"  #passwordRef="ngModel"  #loginform="ngform"-->
+        <div><h2>Login</h2></div>
+        <div class="form-group">
+            <label>Email Id</label>
+        </div>
+        <div>
+            <input type="email" name="email" #emailRef="ngModel"  class="form-control"  ngModel required email>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+        </div>
+        <div>
+            <input type="password" name="password"   #passwordRef="ngModel" class="form-control"  ngModel required >
+        </div>
+        <div class="form-group">
+           <button type="submit" [disabled]="!loginform.form.valid"  class ='btn'>Login</button>
+        </div>
+    </form>
+</div>
+<!--[disabled]="!loginform.form.valid"-->

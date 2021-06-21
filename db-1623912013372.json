@@ -1,0 +1,30 @@
+{
+  "books": [
+    {
+      "bookId": 1,
+      "bookName": "Advices",
+      "bookDescription": "Advices of life",
+      "bookAuthor": "Thulasi"
+    },
+    {
+      "bookId": 2,
+      "bookName": "suggestions",
+      "bookDescription": "suggestions of life",
+      "bookAuthor": "manoj"
+    }
+  ],
+  "user": [
+    {
+      "userId": 1,
+      "userName": "Thanuja",
+      "email": "thanuja@gmai.com",
+      "bookName": "Advices"
+    }
+  ],
+  "signup": [
+    {
+      "email": "thulasi@gmail.com",
+      "password": "12345678"
+    }
+  ]
+}
