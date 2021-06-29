@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators,FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { JSONplaceholderService } from '../services/jsonplaceholder.service';
+import { Signup } from '../signup';
 
 @Component({
   selector: 'app-signup',
@@ -11,11 +13,13 @@ export class SignupComponent implements OnInit {
   
   
 register:FormGroup;
+signup:Signup;
   msg: string;
   email: string;
   password: string;
+ 
   
-  constructor(private formbuilder:FormBuilder,private router:Router) { }
+  constructor(private formbuilder:FormBuilder,private router:Router,private service:JSONplaceholderService) { }
 
   ngOnInit(): void {
     this.register=this.formbuilder.group({
@@ -25,8 +29,12 @@ register:FormGroup;
 
     })
   }
-  submit(form:FormGroup){
+  submit(form:FormGroup):any{
     if(this.register.valid){
+      this.service.signup(this.register).subscribe(data=>{
+      console.log("sign",data);
+        
+      })
       sessionStorage.setItem('email',this.register.value.email)
       sessionStorage.setItem('password',this.register.value.password)
 

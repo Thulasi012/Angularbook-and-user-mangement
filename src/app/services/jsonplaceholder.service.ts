@@ -1,6 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { single } from 'rxjs/operators';
 
 import { Book } from '../book';
 import { Signup } from '../signup';
@@ -44,6 +45,16 @@ export class JSONplaceholderService {
     
       return this.http.put<any>(" http://localhost:3000/user/"+id,user);
       
+    
+  }
+ signup(signup:object):Observable<object> {
+    //var user:User;
+   
+   console.log( "singneduser",signup);
+  
+   
+    //user={userId:userid ,userName:username,email:emailid ,bookname:bookname };
+    return this.http.post("http://localhost:3000/signup", signup);
     
   }
 }

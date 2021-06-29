@@ -1,4 +1,4 @@
-<div>
+<div id="container">
     <form [formGroup]="register" (ngSubmit)="submit(register)" ><!--(ngSubmit)="submit(loginform)"  #emailRef="ngModel"  #passwordRef="ngModel"  #loginform="ngform"-->
         <div><h2>signup</h2></div>
         <div class="form-group">
@@ -23,7 +23,7 @@
         </div>
         
         <div class="form-group">
-           <button type="submit"  class ='btn'>signup</button>
+           <button type="submit"  class ='btn btn-success'>signup</button>
         </div>
     </form>
     <div>

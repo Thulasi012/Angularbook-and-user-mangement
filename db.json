@@ -1,9 +1,18 @@
 {
   "signup": [
     {
+      "username": "thulasi",
       "email": "thulasi@gmail.com",
-      "password": "12345678"
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "username": "sonu",
+      "email": "sonu@gmai.com",
+      "password": "12345678",
+      "id": 2
     }
+    
   ],
   "books": [
     {
